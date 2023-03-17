@@ -10,7 +10,7 @@ import SwiftUI
 struct ListView: View {
     @State var items: [ItemModel] = [
         ItemModel(title: "This is the firts title!", isCompleted: false),
-        ItemModel(title: "This is the firts second!", isCompleted: true),
+        ItemModel(title: "This is the second!", isCompleted: true),
         ItemModel(title: "Third", isCompleted: false)
     ]
     var body: some View {
@@ -18,6 +18,7 @@ struct ListView: View {
             ForEach(items) { item in
                 ListRowView(item: item)
             }
+            .onDelete(perform: deleteItem)
         }
         .listStyle(.plain)
         .navigationTitle("Todo List 📝")
@@ -25,6 +26,10 @@ struct ListView: View {
             leading: EditButton(),
             trailing: NavigationLink("Add", destination: AddView())
         )
+    }
+    
+    func deleteItem(indexSet: IndexSet) {
+        items.remove(atOffsets: indexSet)
     }
 }
 
