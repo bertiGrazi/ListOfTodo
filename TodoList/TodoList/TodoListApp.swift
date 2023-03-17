@@ -7,11 +7,23 @@
 
 import SwiftUI
 
+/*
+ MVVM Architecture
+ 
+ Model: Data point
+ View - UI
+ ViewModel - Manages Models for View
+ 
+*/
+
+
 @main
 struct TodoListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ListView()
+            }
         }
     }
 }
