@@ -59,7 +59,7 @@
 		B1127AB829C4B04200AFA3D9 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				B1127AD329C4DD0400AFA3D9 /* VireModels */,
+				B1127AD329C4DD0400AFA3D9 /* ViewModels */,
 				B1127ACF29C4D68700AFA3D9 /* Models */,
 				B1127AC729C4B1C800AFA3D9 /* Views */,
 				B1127AB929C4B04200AFA3D9 /* TodoListApp.swift */,
@@ -95,12 +95,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B1127AD329C4DD0400AFA3D9 /* VireModels */ = {
+		B1127AD329C4DD0400AFA3D9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				B1127AD429C4DD1400AFA3D9 /* ListViewModel.swift */,
 			);
-			path = VireModels;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
